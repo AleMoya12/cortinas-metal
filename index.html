@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
-    <title>Cortinas Metálicas</title>
+    <title>ADAL COR</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
+<link rel="shortcut icon" href="images/cort4.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/animate.css">
@@ -19,11 +19,15 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<a href="https://api.whatsapp.com/send?phone=+541169853522&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
     <div class="wrap">
         <div class="container">
             <div class="row justify-content-between">
@@ -56,9 +60,9 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
 
-                        <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="#service" class="nav-link">Servicios</a></li>
 
-                        <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +76,7 @@
                         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                             <div class="col-md-10 text-center ftco-animate">
                                 <div class="text w-100">
-                                    <h2>Estamos siempre presentes los 365 días del año.</h2>
+                                    <h2 style="color: #53d4ff; background-color: rgba(0, 0, 0, 0.493);">Estamos siempre presentes los 365 días del año.</h2>
                                     <h1 class="mb-4">Somos fabricantes de cortinas metálicas con más de 25 años de trayectoria.</h1>
                                     <p><a href="#" class="btn btn-primary">Fabricante de cortinas metálicas.</a></p>
                                 </div>
@@ -87,7 +91,7 @@
                         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                             <div class="col-md-8 text-center ftco-animate">
                                 <div class="text w-100">
-                                    <h2>Fabricante de cortinas metálicas.</h2>
+                                    <h2 style="color: #53d4ff; background-color: rgba(0, 0, 0, 0.493);">Fabricante de cortinas metálicas.</h2>
                                     <h1 class="mb-4">Contamos con todos los repuestos y personal capacitado. </h1>
                                     <p><a href="#" class="btn btn-primary">Estamos siempre presentes los 365 días del año.</a></p>
                                 </div>
@@ -118,9 +122,9 @@
                 <div class="col-lg-5 d-flex align-items-stretch">
                     <div class="bg-white">
                         <div class="w-100 heading-title bg-primary text-center">
-                            <h2 class="mb-0">Pedi tu presupuesto</h2>
+                            <h2 class="mb-0" id="contacto">Pedi tu presupuesto</h2>
                         </div>
-                        <form action="#" class="appointment bg-white p-4 p-md-5">
+                        <form action="correo-contacto.php" method="POST"  class="appointment bg-white p-4 p-md-5">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -138,18 +142,18 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre">
+                                        <input type="text" name="nombre" class="form-control" placeholder="Nombre">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input type="email"  name="correo" class="form-control" placeholder="Email">
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensaje"></textarea>
+                                        <textarea name="messaje" id="" cols="30" rows="7" class="form-control" placeholder="Mensaje"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -171,7 +175,7 @@
                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 text-center">
                         <div class="text">
-                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                            <div class="icon"><span style="color: black;" class="fa fa-calendar"></span></div>
                             <strong class="number" data-number="25">0</strong>
                             <span>Años de experiencia</span>
                         </div>
@@ -180,7 +184,7 @@
                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 text-center">
                         <div class="text">
-                            <div class="icon"><span class="fa fa-briefcase"></span></div>
+                            <div class="icon"><span style="color: black;" class="fa fa-briefcase"></span></div>
                             <strong class="number" data-number="450">0</strong>
                             <span>Proyectos completados</span>
                         </div>
@@ -189,7 +193,7 @@
                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 text-center">
                         <div class="text">
-                            <div class="icon"><span class="fa fa-users"></span></div>
+                            <div class="icon"><span style="color: black;" class="fa fa-users"></spans></div>
                             <strong class="number" data-number="450">0</strong>
                             <span>Clientes conformes</span>
                         </div>
@@ -198,7 +202,7 @@
                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 text-center">
                         <div class="text">
-                            <div class="icon"><span class="fa fa-bar-chart"></span></div>
+                            <div class="icon"><span style="color: black;" class="fa fa-bar-chart"></span></div>
                             <strong class="number" data-number="30">0</strong>
                             <span>Empresas Partners</span>
                         </div>
@@ -212,7 +216,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4">Nuestros Servicios</h2>
+                    <h2 class="mb-4" id="service">Nuestros Servicios</h2>
                 </div>
             </div>
             <div class="row">
@@ -350,13 +354,13 @@
                             <ul>
                                 <li><span class="icon fa fa-map-marker"></span><span class="text">Sede Almagro</span></li>
 
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">4-860-3271 </span></a></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text"> 15-6985-3522</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">adal-cor@live.com.ar</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">4860-3271 </span></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=+541169853522&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios."  target="_blank"><span class="icon fa fa-phone"></span><span class="text"> 15-6985-3522</span></a></li>
+                                <li><a href="mailto:adal-cor@live.com.ar"><span class="icon fa fa-paper-plane"></span><span class="text">adal-cor@live.com.ar</span></a></li>
                                 <li><span class="icon fa fa-map-marker"></span><span class="text">Sede Belgrano</span></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">4-787-3467</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">15-6985-3522</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">cortinametalicasbelgrano@gmail.com</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">4860 3271</span></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=+541169853522&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios."  target="_blank"><span class="icon fa fa-phone"></span><span class="text">15-6985-3522</span></a></li>
+                                <li><a href="mailto:cortinametalicasbelgrano@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">cortinametalicasbelgrano@gmail.com</span></a></li>
                             </ul>
                         </div>
                     </div>
